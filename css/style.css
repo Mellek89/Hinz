@@ -47,6 +47,7 @@ body {
   justify-content: center; /* horizontal */
   align-items: left;  
   background-color: #F5F5F5;
+  min-height: 100vh
 }
 .side-menu {
  display: none;
@@ -421,6 +422,9 @@ footer.en{
 .logo{
   width: 200px;
 }
+.intro{
+width: 550px;
 
+}
 
 }
