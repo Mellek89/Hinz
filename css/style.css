@@ -64,7 +64,7 @@ body {
   flex-direction: row;
    align-items: center; 
   gap: 0.5em;
- width: 100px;
+ width: 150px;
 }
 
 .logo{
