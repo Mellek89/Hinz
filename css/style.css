@@ -65,10 +65,12 @@ body {
    align-items: center; 
   gap: 0.5em;
  width: 150px;
+ height: auto;
 }
 
 .logo{
   width: 100px;
+  height: 500px;
 }
    .nav{
   font-size: 100%;
