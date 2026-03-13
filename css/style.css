@@ -40,35 +40,42 @@ body {
 .header.en{
   background-color: #2C3E46;
 }
+
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* horizontal */
+  align-items: left;  
   background-color: #F5F5F5;
-  display: grid;
-  grid-template-columns: 1fr;   /* nur EINE Spalte auf Mobil */
-  grid-template-rows: auto auto auto auto auto; 
-  gap: 5rem;
-  min-height: auto;
-  align-content:start;
-
-  color: #141414;
-  gap: 5rem;
-  justify-items: left; /* horizontal zentrieren */
- 
+  min-height: 100vh
 }
-
 .side-menu {
  display: none;
  } 
+.intro{
+width: 250px;
 
- .menuContainer{
-  display: flex;
-  flex-direction: row;
-   align-items: center; 
-  gap: 2em;
- width: 100px;
 }
 
+ .menuContainer{
+  display: none;
+  flex-direction: row;
+  align-items: center; 
+  gap: 0.5em;
+ width: 150px;
+ height: auto;
+  align-self: flex-start;
+}
+.video-container{
+ display: flex;
+  justify-content: center; /* Video horizontal zentrieren */
+  align-items: center;
+  width: 100%;
+
+}
 .logo{
   width: 100px;
+  height: 500px;
 }
    .nav{
   font-size: 100%;
@@ -232,16 +239,8 @@ body {
   margin-top: 1.5rem;
   
 }
-.allProductos{
-  display: grid;
-  grid-template-columns: 1fr
-  ;
-padding: 2em;
-}
-.svgHoneyCup{
-  width: 200px;
-  margin-top: 10px;
-}
+
+
 .hero {
   position: relative;
  min-height: 80vh;
@@ -380,16 +379,24 @@ footer.en{
       transition: max-height .4s ease-out;
       z-index: 4;
     }
-
+.main {
+ 
+  display: grid;
+  grid-template-columns: 1fr;   /* nur EINE Spalte auf Mobil */
+  grid-template-rows: auto auto auto auto auto; 
+  gap: 5rem;
+  min-height: auto;
+  align-content:start;
+  color: #141414;
+  gap: 5rem;
+  justify-items: left; /* horizontal zentrieren */
+ 
+}
 .menu{
   display: flex;
   flex-direction: column;
 }
-.main {
 
-  justify-items: left; /* horizontal zentrieren */
- 
-}
   .main .buttons {
     flex-direction: row;
     gap: 2rem;
@@ -415,6 +422,9 @@ footer.en{
 .logo{
   width: 200px;
 }
+.intro{
+width: 550px;
 
+}
 
 }

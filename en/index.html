@@ -64,7 +64,7 @@
     </header>
 
     <main class="main">
-       <div class="menuContainer">
+       <div class="menuContainer" id="menuContainer">
       <svg class="logo"
         version="1.1"
         viewBox="0 0 702 1600"
@@ -80,7 +80,7 @@
             id="path1" />
         </g>
       </svg>
-
+ 
       <input class="side-menu" title="hamb" type="checkbox" id="side-menu"/>
                 <!--label class="hamb" id="hamb" for="side-menu"><span class="hamb-line"></span></label-->
                 <!--Menu-->
@@ -92,10 +92,13 @@
                   <li class="home"> <a  href="index.html">Märkte</a></li>
                   
                   </ul>
-                </nav>
-
+                </nav>     
+              </div>
+  <div class="video-container">
+     <video autoplay muted playsinline id="intro" class="intro">
+  <source src="../images/Intro.mp4" type="video/mp4">
+     </video>
      </div>
-
 
       
 
@@ -105,6 +108,12 @@
       <p>© 2025 Melle Piribebuy</p>
     </footer>
   </div>
+
+  <script>
+document.getElementById("intro").onended = function() {
+  this.style.display = "none";
+};
+</script>
 <script type= "module" src="../js/script.js"></script>
 </body>
 </html>
