@@ -26,11 +26,8 @@ body {
 /* Header */
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "hamb lang"
-    "logo logo";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
  padding: 0.5em;
   align-items: center;
  background-color: #F5F5F5;
@@ -42,7 +39,21 @@ body {
 .header.en{
   background-color: #2C3E46;
 }
-
+  .nav.horizontal{
+    display: flex;
+    align-items: center;
+    position:relative;
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .menu.horizontal{
+    display: flex;
+     width: auto;
+     gap: 3em;
+  }
+  .menu.horizontal li a{
+  white-space:nowrap;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -62,6 +73,7 @@ width: 250px;
 }
 .menuWelcomeContainer{
   display: flex;
+  flex-direction: row;
  
 }
 .welcome{
@@ -76,6 +88,7 @@ font-size: 20px;
   align-items: center;
    padding: 4em;
 }
+
  .menuContainer{
  
   display: none;
@@ -89,6 +102,10 @@ font-size: 20px;
 
 
 }
+.herbsContainer{
+  display: flex;
+  flex-direction: column;
+}
 .video-container{
  display: flex;
   justify-content: center; /* Video horizontal zentrieren */
@@ -101,21 +118,17 @@ font-size: 20px;
   
 }
 
-.butterfly{
-  position:absolute;
-  width: 10px;
-   transition: all 0.4s ease;
-}
+
 .menu li.active::after{
   content:"";
   position:absolute;
 
-  top:0px;
-  left:120%;
+  top:2px;
+  left: 50px;
   transform:translateX(-50%);
 
-  width:20px;
-  height:20px;
+  width:10px;
+  height:15px;
 
   background-image:url("./../images/schmetterling.svg");
   background-size:contain;
@@ -135,7 +148,7 @@ font-size: 20px;
     .nav.de li a{ 
     color: #0000008f;
     }
-  
+
      .menu {
            
             display: grid;
@@ -223,11 +236,11 @@ font-size: 20px;
 
 .lang-picker{
   position: relative;
-  grid-area: lang;
+  grid-column: -1;
+    grid-row:1; 
    justify-self: end;   /* rechts */
   align-self: start;   /* oben */
 
-  
 }
 
 
@@ -439,7 +452,7 @@ footer.en{
  
 }
 .menuWelcomeContainer{
-  gap: 15em;
+
 
 }
  .menuContainer{
