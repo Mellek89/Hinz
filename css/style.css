@@ -88,6 +88,10 @@ font-size: 20px;
   align-items: center;
    padding: 4em;
 }
+.herbsText{
+  padding: 2em;
+  font-size: 12px;
+}
 
  .menuContainer{
  
@@ -451,10 +455,7 @@ footer.en{
   justify-items: left; /* horizontal zentrieren */
  
 }
-.menuWelcomeContainer{
 
-
-}
  .menuContainer{
  
   flex-direction: column;
