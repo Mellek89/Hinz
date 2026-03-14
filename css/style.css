@@ -49,16 +49,16 @@ body {
   }
   .menu{
     display: flex;
-     width: auto;
      gap: 3em;       
     text-align: center;
     font-size: 70%;
     padding: 0;
      margin: 0;
     list-style: none;
-     width: 60px;
+   
   }
   .menu li a{
+      position:relative;
   white-space:nowrap;
 }
 .main {
@@ -146,6 +146,7 @@ font-size: 20px;
 
 .menu li{
   position: relative;
+   flex-shrink:0;
 }
 .menu li.active{
   display:flex;
@@ -155,7 +156,7 @@ font-size: 20px;
 
 /* Container für Linie + Schmetterling */
 .menu li.active a{
-  position:absolute;
+ 
   display:flex;
   align-items:center;
   gap:0px;
@@ -466,6 +467,7 @@ footer.en{
       transition: max-height .4s ease-out;
       z-index: 4;
       align-items: center;
+        grid-column: 1/-1;
     }
 .main {
   display: grid;
@@ -490,8 +492,9 @@ footer.en{
 
 .menu{
   display: flex;
-  flex-direction: column;
+
   font-size: 100%;
+
 }
 
 
