@@ -81,6 +81,7 @@ width: 250px;
 .menuWelcomeContainer{
   display: flex;
   flex-direction: row;
+  min-width: 400px;
  
 }
 .welcome{
@@ -94,7 +95,7 @@ font-size: 20px;
   display: none;
   justify-content: center;
   align-items: center;
-   padding: 4em;
+
 }
 .herbsSubline{
   text-align: center;
@@ -117,7 +118,8 @@ font-size: 20px;
 
 
 }
-.herbsContainer{
+.herbsContainer,
+.infoContainer{
   display: flex;
   flex-direction: column;
   align-items: center; 
@@ -125,11 +127,15 @@ font-size: 20px;
     gap: 2em;
     padding-top: 1em;
 }
+.infoContainer{
+  justify-content: center;
+}
 .derHinz{
   text-align: center;
 }
 .video-container{
  display: flex;
+ flex-direction: column;
   justify-content: center; /* Video horizontal zentrieren */
   align-items: center;
   width: 100%;
@@ -474,7 +480,6 @@ footer.en{
   }
     .nav{
       overflow:inherit;
-      display: flex;
       flex-direction: column;
       justify-self: end;
       place-items: center;
