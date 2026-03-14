@@ -86,7 +86,7 @@ width: 250px;
 .welcome{
   justify-self: center; /* horizontale Zentrierung im Grid */
   text-align: center;
-padding: 2em;
+padding: 1em;
 font-size: 20px;
 }
 .welcomeText{
@@ -116,6 +116,7 @@ font-size: 20px;
 .herbsContainer{
   display: flex;
   flex-direction: column;
+   align-items: center; 
 }
 .video-container{
  display: flex;
@@ -127,6 +128,9 @@ font-size: 20px;
 .logo{
   width: 50px;
   margin-top: 50px;
+}
+.herbs{
+  width: 100px;
 }
    .nav{
   font-size: 100%;
