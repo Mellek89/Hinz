@@ -49,7 +49,7 @@ body {
   }
   .menu{
     display: flex;
-     gap: 3em;       
+     gap: 2em;       
     text-align: center;
     font-size: 70%;
     padding: 0;
