@@ -86,7 +86,8 @@ width: 250px;
 .welcome{
   justify-self: center; /* horizontale Zentrierung im Grid */
   text-align: center;
-padding: 1em;
+padding-top: 1em;
+
 font-size: 20px;
 }
 .welcomeText{
@@ -94,6 +95,9 @@ font-size: 20px;
   justify-content: center;
   align-items: center;
    padding: 4em;
+}
+.herbsSubline{
+  text-align: center;
 }
 .herbsText{
   padding: 2em;
@@ -117,9 +121,12 @@ font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center; 
-    text-align: center;
+   font-size: 12px;
     gap: 2em;
     padding-top: 1em;
+}
+.derHinz{
+  text-align: center;
 }
 .video-container{
  display: flex;
@@ -134,6 +141,7 @@ font-size: 20px;
 }
 .svgHerbs{
   width: 120px;
+
 }
    .nav{
   font-size: 100%;
