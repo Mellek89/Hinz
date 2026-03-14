@@ -13,7 +13,7 @@ video.addEventListener("ended", () => {
 
   nav.style.display = "flex"; // Menü anzeigen
 welcomeText.forEach(text => {
-  text.style.style.display = "flex"; 
+  text.style.display = "flex"; 
 });
 
 });
