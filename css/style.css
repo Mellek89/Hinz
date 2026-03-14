@@ -39,19 +39,26 @@ body {
 .header.en{
   background-color: #2C3E46;
 }
-  .nav.horizontal{
-    display: flex;
+  .nav{
+    display: none;
+  
     align-items: center;
     position:relative;
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 3;
   }
-  .menu.horizontal{
+  .menu{
     display: flex;
      width: auto;
-     gap: 3em;
+     gap: 3em;       
+    text-align: center;
+    font-size: 70%;
+    padding: 0;
+     margin: 0;
+    list-style: none;
+     width: 60px;
   }
-  .menu.horizontal li a{
+  .menu li a{
   white-space:nowrap;
 }
 .main {
@@ -121,23 +128,6 @@ font-size: 20px;
   width: 50px;
   
 }
-
-
-.menu li.active::after{
-  content:"";
-  position:absolute;
-
-  top:2px;
-  left: 50px;
-  transform:translateX(-50%);
-
-  width:10px;
-  height:15px;
-
-  background-image:url("./../images/schmetterling.svg");
-  background-size:contain;
-  background-repeat:no-repeat;
-}
    .nav{
   font-size: 100%;
  
@@ -153,22 +143,58 @@ font-size: 20px;
     color: #0000008f;
     }
 
-     .menu {
-           
-            display: grid;
-            gap: 1rem; /* Use rem for better scalability */
-            
-            text-align: center;
-            font-size: 70%;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            width: 60px;
-          
-          }
+
 .menu li{
   position: relative;
 }
+.menu li.active{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* Container für Linie + Schmetterling */
+.menu li.active a{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  gap:0px;
+}
+
+/* linke Linie */
+.menu li.active a::before{
+  content:"";
+  width:10px;
+  height:1px;
+  left: -2px;
+  background:#7ace5b;
+     position: absolute;
+  top: 30px;
+  
+}
+
+/* rechte Linie */
+.menu li.active a::after{
+  content:"";
+  width:10px;
+  height:1px;
+  right: -2px;
+  background:#7ace5b;
+    position: absolute;
+  top: 30px;
+}
+
+/* Schmetterling */
+.menu li.active::before{
+  content:"";
+  width:18px;
+  height:18px;
+  background:url("../images/schmetterling.svg") center/contain no-repeat;
+  margin-bottom:4px;
+  position: absolute;
+  top: 20px;
+}
+
     
     
   /* Menu Icon */
@@ -395,8 +421,6 @@ font-size: 20px;
 }
 
 
-
-
 /* Footer */
 .footer{
   background-color: #141414;
@@ -469,6 +493,7 @@ footer.en{
   flex-direction: column;
   font-size: 100%;
 }
+
 
   .main .buttons {
     flex-direction: row;
