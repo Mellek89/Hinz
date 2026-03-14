@@ -454,20 +454,20 @@ footer.en{
   display: grid;
   grid-template-columns: auto ;
   text-align: left;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: 1fr  1fr 1fr ;
  background-color: #F5F5F5;
   }
     .nav{
       overflow:inherit;
       display: flex;
-     flex-direction: column;
-      width: 50px;
+      flex-direction: column;
+      justify-self: end;
       place-items: center;
       inset: 0; /* shorthand for top, right, bottom, left: 0 */
       transition: max-height .4s ease-out;
       z-index: 4;
       align-items: center;
-        grid-column: 1/-1;
+      grid-column: 2;
     }
 .main {
   display: grid;
