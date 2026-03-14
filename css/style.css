@@ -81,7 +81,7 @@ width: 250px;
 .menuWelcomeContainer{
   display: flex;
   flex-direction: row;
-  min-width: 400px;
+  min-width: 350px;
  
 }
 .welcome{
