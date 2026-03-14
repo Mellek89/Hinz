@@ -116,7 +116,10 @@ font-size: 20px;
 .herbsContainer{
   display: flex;
   flex-direction: column;
-   align-items: center; 
+  align-items: center; 
+    text-align: center;
+    gap: 2em;
+    padding-top: 1em;
 }
 .video-container{
  display: flex;
