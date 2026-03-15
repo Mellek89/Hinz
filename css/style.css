@@ -95,6 +95,7 @@ font-size: 20px;
   display: none;
   justify-content: center;
   align-items: center;
+  margin-top: 4em;
 
 }
 .herbsSubline{
@@ -168,6 +169,11 @@ font-size: 20px;
 .menu li{
   position: relative;
    flex-shrink:0;
+}
+.menu li a{
+  display:flex;
+  justify-content:center;
+  min-width:40px;
 }
 .menu li.active{
   display:flex;
