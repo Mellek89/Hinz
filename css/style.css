@@ -112,7 +112,7 @@ font-size: 20px;
   flex-direction: row;
   align-items: center; 
   gap: 0.5em;
- width: 150px;
+ width: 60px;
  height: auto;
   align-self: flex-start; 
   margin-top: 0;
@@ -122,12 +122,13 @@ font-size: 20px;
 .herbsContainer,
 .infoContainer,
 .calendarContainer{
+  max-width: 290px;
   display: flex;
   flex-direction: column;
   align-items: center; 
-   font-size: 12px;
-    gap: -2m;
-    padding-top: 1em;
+  font-size: 12px;
+  gap: -2m;
+  padding-top: 1em;
 }
 .infoContainer{
   justify-content: center;
