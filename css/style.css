@@ -105,7 +105,19 @@ font-size: 20px;
   padding: 2em;
   font-size: 12px;
 }
-
+.derHinzContainer{
+  display: flex;
+  flex-direction: row;
+   align-items:center; 
+   margin-bottom: 2em; 
+}
+.derHinzContainer p{
+  margin:0;             /* entfernt Standardabstand */
+}
+.derHinz{
+   font-family: "Rye", serif;
+   font-size:16px;
+}
  .menuContainer{
  
   display: none;
