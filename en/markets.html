@@ -56,20 +56,20 @@
 </div>
 </div>
 </div>
- <input class="side-menu" title="hamb" type="checkbox" id="side-menu"/>
+  <input class="side-menu" title="hamb" type="checkbox" id="side-menu"/>
                 <!--label class="hamb" id="hamb" for="side-menu"><span class="hamb-line"></span></label-->
                 <!--Menu-->
                 <nav class="nav" id="nav">
                   <ul class="menu" id="menu">
-                  <li class="home active"> <a  href="index.html">Home</a>  
+                  <li class="home "> <a  href="index.html">Home</a>  
                    </li>
                    
-                  <li class="herbs"> <a  href="herbs.html">Gewürze</a></li>
-                  <li class="us"> <a  href="index.html">Uber uns</a></li>
-                  <li class="markets"> <a  href="markets.html">Märkte</a></li>
+                  <li class="herbs "> <a  href="herbs.html">Gewürze</a></li>
+                  <li class="us "> <a  href="us.html">Uber uns</a></li>
+                  <li class="markets active"> <a  href="markets.html">Märkte</a></li>
                   
                   </ul>
-                </nav> 
+                </nav>     
 
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
@@ -101,45 +101,71 @@
     </g>
   </g>
 </svg>
+
+ 
+       
+              </div>
+<div class="calendarContainer">
+               <h3 class="welcome">Termine</h3>
+             
+                    <p>Seit über 20 Jahren verkaufen wir Heilkräuter, Gewürze und Tee 
+                auf dem Wochenmarkt Tuttlingen, Konstanz und Radolfzell. </p>
+    <div class="calendar" id="calendar">
+        
+        <header>
+          <p class="current-date"></p>
+        
+          <!--div class="icons">
+  <
+
+            <span id = "prev" class="material-symbols-rounded">chevron_left</span>
+            <span id = "next" class="material-symbols-rounded">chevron_right</span>
+          </div-->
+          <div class="icons">
+  <span id="prev" class="icon">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+  </span>
+
+  <span id="next" class="icon">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+    </svg>
+  </span>
+</div>
+
+
+        
+
+          </header>
+          <div class="calendar-body">
+                <ul class="weeks">
+                <li>So</li>
+                <li>Mo</li>
+                <li>Di</li>
+                <li>Mi</li>
+                <li>Do</li>
+                <li>Fr</li>
+                <li>Sa</li> 
+                </ul>
+                <ul class="days">
+
+          
+        </ul> 
+
+        </div>
+    </div>
+</div> 
     
-   </div>
+               
+            </div>
 
-   <div class="infoContainer">
-  <p class="welcomeText">
-    Mit über 200 verschiedenen Gewürzmischungen im Gepäck sind wir regelmäßig auf den Wochenmärkten 
-    in Tuttlingen, Konstanz und Radolfzell für Sie unterwegs.</p>
-                 
-    
- <p class="welcomeText">***-HIER EIN BILD VOM WAGEN MIT INTEGRIERTEM TEXT***  </p>  
+            </div>
 
-                
-                 
-                  <p class="welcomeText">***-------------------B----------------------------***
-                  
-                  
-                 </p>
-   
-                    <p class="welcomeText">***-------------------I----------------------------*** </p>
-   
-                    <p class="welcomeText">***--- Kommen Sie vorbei, wir beraten sie gerne--**    </p>
-                  
-                  
+            </div>
 
-   
-                    <p class="welcomeText">***-------------------L---------------------------*** </p>
-                     <p class="welcomeText">***--------------------D---------------------------***  </p>  
-                  
 
-   
-   
-  <div class="video-container">
-     <h3 class="welcome" id="welcome">Herzlich willkommen bei Heilkräuter und Gewürze Hinz </h3>
-     <video autoplay muted playsinline id="intro" class="intro">
-  <source src="../images/Intro.mp4" type="video/mp4">
-     </video>
-     </div>
-     </div>
-     </div>
       
 
     </main>
@@ -149,11 +175,7 @@
     </footer>
   </div>
 
-  <script>
-document.getElementById("intro").onended = function() {
-  this.style.display = "none";
-};
-</script>
+
 <script type= "module" src="../js/script.js"></script>
 </body>
 </html>
